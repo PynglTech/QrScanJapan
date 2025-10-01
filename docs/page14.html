@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 20px;
+            height: 100%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* This stacks the image and button vertically */
+            background-color: #f0f0f0;
+            gap: 25px; /* This adds space between the image and the button */
+        }
+        img {
+            max-width: 90%;
+            max-height: 70vh; /* Limit image height to ensure button is visible */
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* Styling for the download button */
+        .download-button {
+            background-color: #D32F2F; /* Red color for PDF */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .download-button:hover {
+            background-color: #B71C1C; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.ibb.co/v6pc8kFZ/image1.jpg" alt="Displayed Content">
+    <a href="my_document.pdf" download="Pot.pdf" class="download-button">
+        Download PDF 📄
+    </a>
+</body>
+</html>
